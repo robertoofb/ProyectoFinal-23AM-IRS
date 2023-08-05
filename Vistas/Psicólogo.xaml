@@ -34,7 +34,7 @@
         </Button>
         <Label Content="Matrícula" HorizontalAlignment="Left" Height="26" Margin="643,114,0,0" VerticalAlignment="Top" Width="66" Foreground="White"/>
         <TextBox x:Name="txtMatricula" HorizontalAlignment="Left" Height="20" Margin="643,140,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="82" IsEnabled="False"/>
-        <Label Content="Observación" HorizontalAlignment="Left" Height="26" Margin="643,174,0,0" VerticalAlignment="Top" Width="82" Foreground="White"/>
+        <Label Content="Reporte" HorizontalAlignment="Left" Height="26" Margin="643,174,0,0" VerticalAlignment="Top" Width="82" Foreground="White"/>
         <TextBox x:Name="txtObservación" HorizontalAlignment="Left" Height="158" Margin="643,205,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="185"/>
         <Button x:Name="BtnAddObs" Content="Agregar Observación" HorizontalAlignment="Left" Height="28" Margin="670,378,0,0" VerticalAlignment="Top" Width="132" Background="#FF6BA4E0" BorderThickness="2,2,2,2" BorderBrush="White" Foreground="White" Click="BtnAddObs_Click"/>
 

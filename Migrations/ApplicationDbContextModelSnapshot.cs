@@ -23,11 +23,22 @@ namespace ProyectoFinal_23AM.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
+                    b.Property<string>("Curp")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<int>("Edad")
+                        .HasColumnType("int");
+
                     b.Property<int?>("FkGrado")
                         .IsRequired()
                         .HasColumnType("int");
 
                     b.Property<string>("Nombre")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("NombreTutor")
                         .IsRequired()
                         .HasColumnType("text");
 
@@ -147,6 +158,10 @@ namespace ProyectoFinal_23AM.Migrations
                         .HasColumnType("text");
 
                     b.Property<string>("Password")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("RFC")
                         .IsRequired()
                         .HasColumnType("text");
 

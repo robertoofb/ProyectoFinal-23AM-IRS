@@ -29,6 +29,7 @@ namespace ProyectoFinal_23AM.Services
                             UserName = request.UserName,
                             Password = request.Password,
                             FkRol = request.FkRol,
+                            RFC= request.RFC,
                         };
                         _context.Usuarios.Add(res);
                         _context.SaveChanges();
@@ -52,6 +53,7 @@ namespace ProyectoFinal_23AM.Services
                     update.UserName = request.UserName;
                     update.Password = request.Password;
                     update.FkRol = request.FkRol;
+                    update.RFC = request.RFC;
 
                     _context.Usuarios.Update(update);
                     _context.SaveChanges();

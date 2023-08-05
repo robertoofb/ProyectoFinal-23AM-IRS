@@ -39,7 +39,8 @@ namespace ProyectoFinal_23AM.Vistas
                     Nombre = txtNombre.Text,
                     UserName = txtUserName.Text,
                     Password = txtPassword.Text,
-                    FkRol = int.Parse(SelectRol.SelectedValue.ToString())
+                    FkRol = int.Parse(SelectRol.SelectedValue.ToString()),
+                    RFC = txtRFC.Text,
                 };
 
                 services.AddUser(usuario);
@@ -47,6 +48,7 @@ namespace ProyectoFinal_23AM.Vistas
                 txtNombre.Clear();
                 txtUserName.Clear();
                 txtPassword.Clear();
+                txtRFC.Clear();
                 GetUserTable();
             }
             else
@@ -59,13 +61,15 @@ namespace ProyectoFinal_23AM.Vistas
                     Nombre= txtNombre.Text,
                     UserName = txtUserName.Text,
                     Password = txtPassword.Text,
-                    FkRol = int.Parse(SelectRol.SelectedValue.ToString())
+                    FkRol = int.Parse(SelectRol.SelectedValue.ToString()),
+                    RFC = txtRFC.Text
                 };
                 services.UpdateUser(usuario);
                 MessageBox.Show("Usuario modificado");
                 txtNombre.Clear();
                 txtUserName.Clear();
                 txtPassword.Clear();
+                txtRFC.Clear();
                 GetUserTable();
             }
         }
@@ -78,6 +82,7 @@ namespace ProyectoFinal_23AM.Vistas
             txtNombre.Text = usuario.Nombre.ToString();
             txtUserName.Text = usuario.UserName.ToString();
             txtPassword.Text = usuario.Password.ToString();
+            txtRFC.Text = usuario.RFC.ToString();
         }
         public void DeleteItem(object sender, RoutedEventArgs e)
         {
@@ -91,6 +96,7 @@ namespace ProyectoFinal_23AM.Vistas
                 txtNombre.Clear();
                 txtUserName.Clear();
                 txtPassword.Clear();
+                txtRFC.Clear();
                 GetUserTable();
             }
             else
@@ -121,6 +127,7 @@ namespace ProyectoFinal_23AM.Vistas
             txtUserName.Clear();
             txtPassword.Clear();
             txtNombre.Clear();
+            txtRFC.Clear();
         }
     }
 }

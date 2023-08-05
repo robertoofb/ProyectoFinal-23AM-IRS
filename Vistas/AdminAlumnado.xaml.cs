@@ -43,7 +43,10 @@ namespace ProyectoFinal_23AM.Vistas
                 Alumno alumno = new Alumno()
                 {
                     Nombre = txtNombre.Text + " " + txtApellido.Text,
-                    FkGrado = int.Parse(txtGrado.Text)
+                    FkGrado = int.Parse(txtGrado.Text),
+                    NombreTutor = txtNombreT.Text,
+                    Edad = int.Parse(txtEdad.Text),
+                    Curp = txtCurp.Text
                 };
                 if (alumno.FkGrado == 1 || alumno.FkGrado == 2 || alumno.FkGrado == 3 || alumno.FkGrado == 4 || alumno.FkGrado == 5 || alumno.FkGrado == 6)
                 {
@@ -52,6 +55,9 @@ namespace ProyectoFinal_23AM.Vistas
                     txtNombre.Clear();
                     txtApellido.Clear();
                     txtGrado.Clear();
+                    txtNombreT.Clear();
+                    txtCurp.Clear();
+                    txtEdad.Clear();
                     GetAlumnosTable();
                     GetGradoTable();
                 }
@@ -67,13 +73,19 @@ namespace ProyectoFinal_23AM.Vistas
                 {
                     PkMatricula = userId,
                     Nombre = txtNombre.Text + " " + txtApellido.Text,
-                    FkGrado = int.Parse(txtGrado.Text)
+                    FkGrado = int.Parse(txtGrado.Text),
+                    NombreTutor = txtNombreT.Text,
+                    Edad = int.Parse(txtEdad.Text),
+                    Curp = txtCurp.Text
                 };
                 services.UpdateAlumno(alumno);
                 MessageBox.Show("Alumno modificado");
                 txtNombre.Clear();
                 txtApellido.Clear();
                 txtGrado.Clear();
+                txtNombreT.Clear();
+                txtCurp.Clear();
+                txtEdad.Clear();
                 LabelNombre.Visibility = Visibility.Hidden;
                 txtNombreCompleto.Visibility = Visibility.Hidden;
                 txtPkMatricula.Clear();
@@ -91,6 +103,9 @@ namespace ProyectoFinal_23AM.Vistas
             txtPkMatricula.Text = alumno.PkMatricula.ToString();
             txtNombreCompleto.Text  = alumno.Nombre.ToString();
             txtGrado.Text = alumno.FkGrado.ToString();
+            txtNombreT.Text = alumno.NombreTutor.ToString();
+            txtCurp.Text = alumno.Curp.ToString();
+            txtEdad.Text = alumno.Edad.ToString();
         }
         public void DeleteItem(object sender, RoutedEventArgs e)
         {
@@ -105,6 +120,9 @@ namespace ProyectoFinal_23AM.Vistas
                 txtNombre.Clear();
                 txtApellido.Clear();
                 txtGrado.Clear();
+                txtNombreT.Clear();
+                txtCurp.Clear();
+                txtEdad.Clear();
                 LabelNombre.Visibility = Visibility.Hidden;
                 txtNombreCompleto.Visibility = Visibility.Hidden;
                 txtPkMatricula.Clear();
@@ -140,10 +158,9 @@ namespace ProyectoFinal_23AM.Vistas
             txtNombre.Clear();
             txtApellido.Clear();
             txtGrado.Clear();
-        }
-        private void UserTable_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-
+            txtNombreT.Clear();
+            txtCurp.Clear();
+            txtEdad.Clear();
         }
     }
 }

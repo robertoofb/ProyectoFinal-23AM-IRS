@@ -24,7 +24,10 @@ namespace ProyectoFinal_23AM.Services
                         Alumno res = new Alumno()
                         {
                             Nombre = request.Nombre,
-                            FkGrado= request.FkGrado
+                            FkGrado= request.FkGrado,
+                            NombreTutor= request.NombreTutor,
+                            Curp = request.Curp,
+                            Edad = request.Edad
                         };
                         _context.alumnos.Add(res);
                         _context.SaveChanges();
@@ -45,6 +48,9 @@ namespace ProyectoFinal_23AM.Services
                     Alumno update = _context.alumnos.Find(request.PkMatricula);
                     update.Nombre = request.Nombre;
                     update.FkGrado = request.FkGrado;
+                    update.NombreTutor = request.NombreTutor;
+                    update.Curp = request.Curp;
+                    update.Edad = request.Edad;
 
                     _context.alumnos.Update(update);
                     _context.SaveChanges();

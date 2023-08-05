@@ -3,7 +3,7 @@ using MySql.EntityFrameworkCore.Metadata;
 
 namespace ProyectoFinal_23AM.Migrations
 {
-    public partial class edukids : Migration
+    public partial class edukidsIRS : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -53,6 +53,9 @@ namespace ProyectoFinal_23AM.Migrations
                     PkMatricula = table.Column<int>(type: "int", nullable: false)
                         .Annotation("MySQL:ValueGenerationStrategy", MySQLValueGenerationStrategy.IdentityColumn),
                     Nombre = table.Column<string>(type: "text", nullable: false),
+                    NombreTutor = table.Column<string>(type: "text", nullable: false),
+                    Edad = table.Column<int>(type: "int", nullable: false),
+                    Curp = table.Column<string>(type: "text", nullable: false),
                     FkGrado = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
@@ -75,6 +78,7 @@ namespace ProyectoFinal_23AM.Migrations
                     Nombre = table.Column<string>(type: "text", nullable: false),
                     UserName = table.Column<string>(type: "text", nullable: false),
                     Password = table.Column<string>(type: "text", nullable: false),
+                    RFC = table.Column<string>(type: "text", nullable: false),
                     FkRol = table.Column<int>(type: "int", nullable: true)
                 },
                 constraints: table =>

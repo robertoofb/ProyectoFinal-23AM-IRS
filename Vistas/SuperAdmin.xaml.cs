@@ -39,7 +39,8 @@ namespace ProyectoFinal_23AM.Vistas
                     Nombre = txtNombre.Text,
                     UserName = txtUsuario.Text,
                     Password = txtPassword.Text,
-                    FkRol = 2
+                    FkRol = 2,
+                    RFC = txtRFC.Text
                 };
 
                 services.AddUser(usuario);
@@ -47,6 +48,7 @@ namespace ProyectoFinal_23AM.Vistas
                 txtNombre.Clear();
                 txtUsuario.Clear();
                 txtPassword.Clear();
+                txtRFC.Clear();
                 GetUserTable();
             }
             else
@@ -59,13 +61,15 @@ namespace ProyectoFinal_23AM.Vistas
                     Nombre = txtNombre.Text,
                     UserName = txtUsuario.Text,
                     Password = txtPassword.Text,
-                    FkRol = 2
+                    FkRol = 2,
+                    RFC = txtRFC.Text
                 };
                 services.UpdateUser(usuario);
                 MessageBox.Show("Administrador modificado");
                 txtNombre.Clear();
                 txtUsuario.Clear();
                 txtPassword.Clear();
+                txtRFC.Clear();
                 GetUserTable();
             }
         }
@@ -78,6 +82,7 @@ namespace ProyectoFinal_23AM.Vistas
             txtNombre.Text = usuario.Nombre.ToString();
             txtUsuario.Text = usuario.UserName.ToString();
             txtPassword.Text = usuario.Password.ToString();
+            txtRFC.Text = usuario.RFC.ToString();
         }
         public void DeleteItem(object sender, RoutedEventArgs e)
         {
@@ -92,6 +97,7 @@ namespace ProyectoFinal_23AM.Vistas
                 txtNombre.Clear();
                 txtUsuario.Clear();
                 txtPassword.Clear();
+                txtRFC.Clear();
                 GetUserTable();
             }
             else
@@ -117,6 +123,7 @@ namespace ProyectoFinal_23AM.Vistas
             txtUsuario.Clear();
             txtPassword.Clear();
             txtPkUser.Clear();
+            txtRFC.Clear();
         }
     }
 }

@@ -15,6 +15,7 @@ namespace ProyectoFinal_23AM.Entities
         public string Nombre { get; set; }
         public string UserName { get; set; }
         public string Password { get; set; }
+        public string RFC { get; set; }
 
         [ForeignKey("Roles")]
         public int? FkRol { get; set; }
