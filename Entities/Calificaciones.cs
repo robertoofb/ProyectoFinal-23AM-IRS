@@ -14,6 +14,7 @@ namespace ProyectoFinal_23AM.Entities
         public int PkCalificaciones { get; set; }
 
         public decimal Calificación { get; set; }
+        public decimal Asistencia { get; set; }
 
         [ForeignKey("Materias")]
         public int? FkMateria { get; set; }

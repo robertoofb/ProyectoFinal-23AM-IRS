@@ -99,6 +99,7 @@ namespace ProyectoFinal_23AM.Migrations
                     PkCalificaciones = table.Column<int>(type: "int", nullable: false)
                         .Annotation("MySQL:ValueGenerationStrategy", MySQLValueGenerationStrategy.IdentityColumn),
                     Calificación = table.Column<decimal>(type: "decimal(18, 2)", nullable: false),
+                    Asistencia = table.Column<decimal>(type: "decimal(18, 2)", nullable: false),
                     FkMateria = table.Column<int>(type: "int", nullable: false),
                     FkGrado = table.Column<int>(type: "int", nullable: false),
                     FkMatricula = table.Column<int>(type: "int", nullable: true)

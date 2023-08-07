@@ -8,7 +8,7 @@
         Title="MenuDocente" Height="650" Width="500"
         WindowStartupLocation="CenterScreen">
     <Grid Background="#FF7AA5D2">
-        <Button x:Name="BtnUpdateCalif" Content="" HorizontalAlignment="Left" Height="59" Margin="125,396,0,0" VerticalAlignment="Top" Width="76" BorderThickness="0,0,0,0" RenderTransformOrigin="0.5,0.5" Click="BtnUpdateCalif_Click" >
+        <Button x:Name="BtnUpdateCalif" Content="" HorizontalAlignment="Left" Height="58" Margin="113,408,0,0" VerticalAlignment="Top" Width="76" BorderThickness="0,0,0,0" RenderTransformOrigin="0.5,0.5" Click="BtnUpdateCalif_Click" >
             <Button.Background>
                 <ImageBrush ImageSource="/MainWindowImages/calif.png"/>
             </Button.Background>
@@ -19,12 +19,12 @@
                 <ImageBrush ImageSource="/MainWindowImages/volver-flecha.png"/>
             </Button.Background>
         </Button>
-        <Button x:Name="BtnAddCalif" Content="" HorizontalAlignment="Left" Height="59" Margin="125,286,0,0" VerticalAlignment="Top" Width="76" BorderThickness="0,0,0,0" RenderTransformOrigin="0.5,0.5" Click="BtnAddCalif_Click">
+        <Button x:Name="BtnAddCalif" Content="" HorizontalAlignment="Left" Height="59" Margin="121,0,0,0" VerticalAlignment="Center" Width="76" BorderThickness="0,0,0,0" RenderTransformOrigin="0.5,0.5" Click="BtnAddCalif_Click">
             <Button.Background>
                 <ImageBrush ImageSource="/MainWindowImages/calif.png"/>
             </Button.Background>
         </Button>
-        <Label Content="Subir Calificaciones" HorizontalAlignment="Left" Height="34" Margin="214,299,0,0" VerticalAlignment="Top" Width="181" Foreground="White" Background="{x:Null}" RenderTransformOrigin="0.5,0.5" FontSize="20">
+        <Label Content="Subir Calificaciones&#xD;&#xA;     y Asistencias" HorizontalAlignment="Left" Height="68" Margin="200,286,0,0" VerticalAlignment="Top" Width="178" Foreground="White" Background="{x:Null}" RenderTransformOrigin="0.5,0.5" FontSize="20">
             <Label.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -34,7 +34,7 @@
                 </TransformGroup>
             </Label.RenderTransform>
         </Label>
-        <Label Content="Modificar Calificaciones" HorizontalAlignment="Left" Height="34" Margin="214,409,0,0" VerticalAlignment="Top" Width="229" Foreground="White" Background="{x:Null}" RenderTransformOrigin="0.5,0.5" FontSize="20">
+        <Label Content="Modificar Calificaciones&#xD;&#xA;        y Asistencias" HorizontalAlignment="Left" Height="67" Margin="194,407,0,0" VerticalAlignment="Top" Width="221" Foreground="White" Background="{x:Null}" RenderTransformOrigin="0.5,0.5" FontSize="20">
             <Label.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -44,7 +44,7 @@
                 </TransformGroup>
             </Label.RenderTransform>
         </Label>
-        <Image Margin="91,384,368,208" Source="/MainWindowImages/lapiz.png" Stretch="Fill"/>
+        <Image Margin="79,396,381,195" Source="/MainWindowImages/lapiz.png" Stretch="Fill"/>
 
     </Grid>
 </Window>

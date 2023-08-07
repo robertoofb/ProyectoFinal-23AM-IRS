@@ -9,7 +9,7 @@ using ProyectoFinal_23AM.Context;
 namespace ProyectoFinal_23AM.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20230805202209_edukidsIRS")]
+    [Migration("20230807211241_edukidsIRS")]
     partial class edukidsIRS
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -56,6 +56,9 @@ namespace ProyectoFinal_23AM.Migrations
                     b.Property<int>("PkCalificaciones")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
+
+                    b.Property<decimal>("Asistencia")
+                        .HasColumnType("decimal(18, 2)");
 
                     b.Property<decimal>("Calificación")
                         .HasColumnType("decimal(18, 2)");

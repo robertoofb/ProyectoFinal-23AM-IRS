@@ -14,8 +14,8 @@
                 <ImageBrush ImageSource="/MainWindowImages/volver-flecha.png"/>
             </Button.Background>
         </Button>
-        <Label Content="Calificación" HorizontalAlignment="Left" Height="24" Margin="625,242,0,0" VerticalAlignment="Top" Width="70" Foreground="White"/>
-        <TextBox x:Name="txtCalificacion" HorizontalAlignment="Left" Height="20" Margin="625,268,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="70"/>
+        <Label Content="Calificación" HorizontalAlignment="Left" Height="24" Margin="586,243,0,0" VerticalAlignment="Top" Width="70" Foreground="White"/>
+        <TextBox x:Name="txtCalificacion" HorizontalAlignment="Left" Height="20" Margin="586,269,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="70"/>
         <Label Content="Nombre" HorizontalAlignment="Left" Height="26" Margin="219,290,0,0" VerticalAlignment="Top" Width="210" Foreground="White"/>
         <TextBox x:Name="txtNombre" HorizontalAlignment="Left" Height="20" Margin="219,321,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="210" IsEnabled="False"/>
         <DataGrid x:Name="AlumnoTable" AutoGenerateColumns="False" CanUserAddRows="False" IsReadOnly="True" ColumnWidth="*" IsSynchronizedWithCurrentItem="True" Margin="86,370,86,25">
@@ -39,11 +39,13 @@
         <Label Content="Grado" HorizontalAlignment="Left" Height="24" Margin="333,236,0,0" VerticalAlignment="Top" Width="48" Foreground="White"/>
         <TextBox x:Name="txtGrado" HorizontalAlignment="Left" Height="20" Margin="333,264,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="96" IsEnabled="False"/>
         <Button x:Name="BtnClear" Content="Limpiar" HorizontalAlignment="Left" Height="28" Margin="131,265,0,0" VerticalAlignment="Top" Width="50" Background="#FF6BA4E0" BorderThickness="2,2,2,2" BorderBrush="White" Foreground="White" Click="BtnClear_Click"/>
-        <Label Content="Clave Materia" HorizontalAlignment="Left" Height="24" Margin="513,240,0,0" VerticalAlignment="Top" Width="86" Foreground="White"/>
-        <TextBox x:Name="txtMateria" HorizontalAlignment="Left" Height="20" Margin="513,268,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="86"/>
-        <Button x:Name="BtnAddCalif" Content="Agregar Calificación" HorizontalAlignment="Left" Height="28" Margin="625,317,0,0" VerticalAlignment="Top" Width="132" Background="#FF6BA4E0" BorderThickness="2,2,2,2" BorderBrush="White" Foreground="White" Click="BtnAddCalif_Click"/>
+        <Label Content="Clave Materia" HorizontalAlignment="Left" Height="24" Margin="474,241,0,0" VerticalAlignment="Top" Width="86" Foreground="White"/>
+        <TextBox x:Name="txtMateria" HorizontalAlignment="Left" Height="20" Margin="474,269,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="86"/>
+        <Button x:Name="BtnAddCalif" Content="Subir Datos" HorizontalAlignment="Left" Height="28" Margin="624,317,0,0" VerticalAlignment="Top" Width="82" Background="#FF6BA4E0" BorderThickness="2,2,2,2" BorderBrush="White" Foreground="White" Click="BtnAddCalif_Click"/>
         <Label FontSize="16" Content="1. Selecciona un Alumno" HorizontalAlignment="Left" Height="43" Margin="198,175,0,0" VerticalAlignment="Top" Width="202" Foreground="White" Background="#FF6BA4E0" BorderThickness="2,2,2,2" BorderBrush="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
-        <Label FontSize="16" Content="2. Ingresa Clave y Calificación" HorizontalAlignment="Left" Height="42" Margin="513,169,0,0" VerticalAlignment="Top" Width="244" Foreground="White" Background="#FF6BA4E0" BorderThickness="2,2,2,2" BorderBrush="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Label FontSize="16" Content="2. Ingresa Clave, Calificación y Asistencia" HorizontalAlignment="Left" Height="43" Margin="474,175,0,0" VerticalAlignment="Top" Width="301" Foreground="White" Background="#FF6BA4E0" BorderThickness="2,2,2,2" BorderBrush="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
         <Button x:Name="BtnMaterias" Content="Materias" HorizontalAlignment="Left" Height="28" Margin="527,317,0,0" VerticalAlignment="Top" Width="58" Background="#FF6BA4E0" BorderThickness="2,2,2,2" BorderBrush="White" Foreground="White" Click="BtnMaterias_Click"/>
+        <Label Content="% de Asistencia" HorizontalAlignment="Left" Height="24" Margin="681,243,0,0" VerticalAlignment="Top" Width="94" Foreground="White"/>
+        <TextBox x:Name="txtAsistencia" HorizontalAlignment="Left" Height="20" Margin="681,269,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="94"/>
     </Grid>
 </Window>

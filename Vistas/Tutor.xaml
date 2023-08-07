@@ -14,22 +14,23 @@
                 <ImageBrush ImageSource="/MainWindowImages/volver-flecha.png"/>
             </Button.Background>
         </Button>
-        <Label Content="Nombre" HorizontalAlignment="Left" Height="26" Margin="29,100,0,0" VerticalAlignment="Top" Width="66" Foreground="White"/>
-        <TextBox x:Name="txtNombre" HorizontalAlignment="Left" Height="20" Margin="29,126,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="237"/>
-        <Button x:Name="BtnBuscar" Content="Buscar Alumno" HorizontalAlignment="Center" Height="28" Margin="0,122,0,0" VerticalAlignment="Top" Width="92" Background="#FF6BA4E0" BorderThickness="2,2,2,2" BorderBrush="White" Foreground="White" Click="BtnMaterias_Click"/>
-        <DataGrid x:Name="UserTable" AutoGenerateColumns="False" CanUserAddRows="False" IsReadOnly="True" ColumnWidth="*" IsSynchronizedWithCurrentItem="True" Margin="29,170,297,33">
+        <Label Content="Nombre" HorizontalAlignment="Left" Height="26" Margin="17,104,0,0" VerticalAlignment="Top" Width="66" Foreground="White"/>
+        <TextBox x:Name="txtNombre" HorizontalAlignment="Left" Height="20" Margin="17,130,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="237"/>
+        <Button x:Name="BtnBuscar" Content="Buscar Alumno" HorizontalAlignment="Left" Height="28" Margin="302,126,0,0" VerticalAlignment="Top" Width="92" Background="#FF6BA4E0" BorderThickness="2,2,2,2" BorderBrush="White" Foreground="White" Click="BtnMaterias_Click"/>
+        <DataGrid x:Name="UserTable" AutoGenerateColumns="False" CanUserAddRows="False" IsReadOnly="True" ColumnWidth="*" IsSynchronizedWithCurrentItem="True" Margin="17,170,282,33">
             <DataGrid.Columns>
 
                 <DataGridTextColumn Header="Nombre" Binding="{Binding Alumnos.Nombre}"/>
                 <DataGridTextColumn Header="Grado" Binding="{Binding Grados.Grado}" Width="50"/>
-                <DataGridTextColumn Header="Materia" Binding="{Binding Materias.Materia}" Width="130"/>
+                <DataGridTextColumn Header="Materia" Binding="{Binding Materias.Materia}" Width="120"/>
                 <DataGridTextColumn Header="Calificación" Binding="{Binding Calificación}" Width="80"/>
+                <DataGridTextColumn Header="Asistencia" Binding="{Binding Asistencia}" Width="63"/>
             </DataGrid.Columns>
 
         </DataGrid>
-        <Label Content="Observaciones" HorizontalAlignment="Left" Height="26" Margin="546,132,0,0" VerticalAlignment="Top" Width="92" Foreground="White" RenderTransformOrigin="0.663,1.809"/>
-        <TextBox x:Name="txtObservación" HorizontalAlignment="Left" Height="125" Margin="508,273,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="255" Background="#FFF0F0F0"/>
-        <DataGrid x:Name="UserTableO" AutoGenerateColumns="False" CanUserAddRows="False" IsReadOnly="True" ColumnWidth="*" IsSynchronizedWithCurrentItem="True" Margin="508,170,37,173">
+        <Label Content="Observaciones" HorizontalAlignment="Left" Height="26" Margin="561,132,0,0" VerticalAlignment="Top" Width="92" Foreground="White" RenderTransformOrigin="0.663,1.809"/>
+        <TextBox x:Name="txtObservación" HorizontalAlignment="Left" Height="125" Margin="523,273,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="255" Background="#FFF0F0F0"/>
+        <DataGrid x:Name="UserTableO" AutoGenerateColumns="False" CanUserAddRows="False" IsReadOnly="True" ColumnWidth="*" IsSynchronizedWithCurrentItem="True" Margin="523,170,22,173">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="ID Observación" Binding="{Binding PkObervaciones}"/>
                 <DataGridTemplateColumn Header="Seleccionar" Width="72">

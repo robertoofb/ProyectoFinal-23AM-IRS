@@ -57,6 +57,7 @@ namespace ProyectoFinal_23AM.Vistas
             txtMatricula.Clear();
             txtMateria.Clear();
             txtCalificacion.Clear();
+            txtAsistencia.Clear();
         }
 
         private void BtnAddCalif_Click(object sender, RoutedEventArgs e)
@@ -72,16 +73,18 @@ namespace ProyectoFinal_23AM.Vistas
                     FkMatricula = int.Parse(txtMatricula.Text),
                     FkMateria = int.Parse(txtMateria.Text),
                     FkGrado = int.Parse(txtGrado.Text),
-                    Calificación = decimal.Parse(txtCalificacion.Text)
+                    Calificación = decimal.Parse(txtCalificacion.Text),
+                    Asistencia = decimal.Parse(txtAsistencia.Text)
                 };
 
                 servicess.AddCalificacion(calificaciones);
-                MessageBox.Show("Calificación agregada");
+                MessageBox.Show("Datos agregados");
                 txtNombre.Clear();
                 txtGrado.Clear();
                 txtMatricula.Clear();
                 txtCalificacion.Clear();
                 txtMateria.Clear();
+                txtAsistencia.Clear();
             }
         }
         private void BtnMaterias_Click(object sender, RoutedEventArgs e)

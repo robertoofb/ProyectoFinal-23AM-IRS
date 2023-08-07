@@ -9,13 +9,14 @@
         WindowStartupLocation="CenterScreen">
     <Grid Background="#FF7AA5D2" Margin="0,0,0,-6">
         <Label FontSize="32" Content="Bienvenido Psicólogo" HorizontalAlignment="Center" Height="62" VerticalAlignment="Top" Width="328" Foreground="White" Background="#FF6BA4E0" BorderThickness="3,3,3,3" BorderBrush="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="0,20,0,0"/>
-        <DataGrid x:Name="UserTable" AutoGenerateColumns="False" CanUserAddRows="False" IsReadOnly="True" ColumnWidth="*" IsSynchronizedWithCurrentItem="True" Margin="30,118,229,27">
+        <DataGrid x:Name="UserTable" AutoGenerateColumns="False" CanUserAddRows="False" IsReadOnly="True" ColumnWidth="*" IsSynchronizedWithCurrentItem="True" Margin="30,118,202,27">
             <DataGrid.Columns>
-                <DataGridTextColumn Header="Id" Binding="{Binding PkCalificaciones}" Width="50"/>
+                <DataGridTextColumn Header="Id" Binding="{Binding PkCalificaciones}" Width="30"/>
                 <DataGridTextColumn Header="Nombre" Binding="{Binding Alumnos.Nombre}"/>
                 <DataGridTextColumn Header="Grado" Binding="{Binding Grados.Grado}" Width="50"/>
                 <DataGridTextColumn Header="Materia" Binding="{Binding Materias.Materia}" Width="130"/>
                 <DataGridTextColumn Header="Calificación" Binding="{Binding Calificación}" Width="80"/>
+                <DataGridTextColumn Header="Asistencia" Binding="{Binding Asistencia}" Width="63"/>
 
                 <DataGridTemplateColumn Header="Seleccionar" Width="70">
                     <DataGridTemplateColumn.CellTemplate>
@@ -32,11 +33,11 @@
                 <ImageBrush ImageSource="/MainWindowImages/volver-flecha.png"/>
             </Button.Background>
         </Button>
-        <Label Content="Matrícula" HorizontalAlignment="Left" Height="26" Margin="643,114,0,0" VerticalAlignment="Top" Width="66" Foreground="White"/>
-        <TextBox x:Name="txtMatricula" HorizontalAlignment="Left" Height="20" Margin="643,140,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="82" IsEnabled="False"/>
-        <Label Content="Reporte" HorizontalAlignment="Left" Height="26" Margin="643,174,0,0" VerticalAlignment="Top" Width="82" Foreground="White"/>
-        <TextBox x:Name="txtObservación" HorizontalAlignment="Left" Height="158" Margin="643,205,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="185"/>
-        <Button x:Name="BtnAddObs" Content="Agregar Observación" HorizontalAlignment="Left" Height="28" Margin="670,378,0,0" VerticalAlignment="Top" Width="132" Background="#FF6BA4E0" BorderThickness="2,2,2,2" BorderBrush="White" Foreground="White" Click="BtnAddObs_Click"/>
+        <Label Content="Matrícula" HorizontalAlignment="Left" Height="26" Margin="666,114,0,0" VerticalAlignment="Top" Width="58" Foreground="White"/>
+        <TextBox x:Name="txtMatricula" HorizontalAlignment="Left" Height="20" Margin="666,140,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="72" IsEnabled="False"/>
+        <Label Content="Reporte" HorizontalAlignment="Left" Height="26" Margin="666,174,0,0" VerticalAlignment="Top" Width="72" Foreground="White"/>
+        <TextBox x:Name="txtObservación" HorizontalAlignment="Left" Height="158" Margin="666,205,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="162"/>
+        <Button x:Name="BtnAddObs" Content="Agregar Observación" HorizontalAlignment="Left" Height="28" Margin="689,378,0,0" VerticalAlignment="Top" Width="116" Background="#FF6BA4E0" BorderThickness="2,2,2,2" BorderBrush="White" Foreground="White" Click="BtnAddObs_Click"/>
 
     </Grid>
 </Window>

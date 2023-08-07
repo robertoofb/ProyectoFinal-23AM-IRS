@@ -26,6 +26,7 @@ namespace ProyectoFinal_23AM.Services
                             FkGrado= request.FkGrado,
                             FkMateria= request.FkMateria,
                             Calificación = request.Calificación,
+                            Asistencia= request.Asistencia,
                         };
                         _context.calificaciones.Add(res);
                         _context.SaveChanges();
@@ -48,6 +49,7 @@ namespace ProyectoFinal_23AM.Services
                     update.FkGrado = request.FkGrado;
                     update.FkMateria = request.FkMateria;
                     update.Calificación = request.Calificación;
+                    update.Asistencia = request.Asistencia;
 
                     _context.calificaciones.Update(update);
                     _context.SaveChanges();

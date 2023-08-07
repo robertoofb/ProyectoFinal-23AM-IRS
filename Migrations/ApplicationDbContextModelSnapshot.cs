@@ -55,6 +55,9 @@ namespace ProyectoFinal_23AM.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
+                    b.Property<decimal>("Asistencia")
+                        .HasColumnType("decimal(18, 2)");
+
                     b.Property<decimal>("Calificación")
                         .HasColumnType("decimal(18, 2)");
 

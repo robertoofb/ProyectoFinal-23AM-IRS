@@ -49,6 +49,7 @@ namespace ProyectoFinal_23AM.Vistas
             txtCalificacion.Text = calificaciones.Calificación.ToString();
             txtMatricula.Text = calificaciones.FkMatricula.ToString();
             txtGrado.Text = calificaciones.FkGrado.ToString();
+            txtAsistencia.Text = calificaciones.Asistencia.ToString();
         }
 
         private void BtnClearCalif_Click(object sender, RoutedEventArgs e)
@@ -58,6 +59,7 @@ namespace ProyectoFinal_23AM.Vistas
             txtCalificacion.Clear();
             txtGrado.Clear();
             txtMatricula.Clear();
+            txtAsistencia.Clear();
         }
 
         private void BtnUpdateCalif_Click(object sender, RoutedEventArgs e)
@@ -75,17 +77,19 @@ namespace ProyectoFinal_23AM.Vistas
                     FkMatricula = int.Parse(txtMatricula.Text),
                     FkMateria = int.Parse(txtMateria.Text),
                     FkGrado = int.Parse(txtGrado.Text),
-                    Calificación = decimal.Parse(txtCalificacion.Text)
+                    Calificación = decimal.Parse(txtCalificacion.Text),
+                    Asistencia = decimal.Parse(txtAsistencia.Text)
                 };
 
                 servicess.UpdateCalificacion(calificaciones);
-                MessageBox.Show("Calificación modificada");
+                MessageBox.Show("Datos modificados");
                 GetCalificacionesTable();
                 txtId.Clear();
                 txtMateria.Clear();
                 txtCalificacion.Clear();
                 txtGrado.Clear();
                 txtMatricula.Clear();
+                txtAsistencia.Clear();
             }
         }
     }

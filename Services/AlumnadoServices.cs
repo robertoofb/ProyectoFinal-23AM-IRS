@@ -131,7 +131,7 @@ namespace ProyectoFinal_23AM.Services
                 {
                     List<Calificaciones> calificaciones = new List<Calificaciones>();
 
-                    calificaciones = _context.calificaciones.Where(x => x.Calificación < 6).Include(x => x.Materias).Include(x => x.Grados).Include(x => x.Alumnos).ToList();
+                    calificaciones = _context.calificaciones.Where(x => x.Calificación < 6 || x.Asistencia <80).Include(x => x.Materias).Include(x => x.Grados).Include(x => x.Alumnos).ToList();
                     return calificaciones;
                 }
             }
