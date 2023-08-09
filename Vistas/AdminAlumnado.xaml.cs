@@ -162,5 +162,10 @@ namespace ProyectoFinal_23AM.Vistas
             txtCurp.Clear();
             txtEdad.Clear();
         }
+
+        private void UserTable_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
 }
